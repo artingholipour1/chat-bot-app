@@ -1,0 +1,107 @@
+/* ========== GLOBAL ========== */
+QMainWindow {
+    background-color: #1e1e2e;
+}
+QWidget {
+    font-family: "Segoe UI", "Vazirmatn", sans-serif;
+    font-size: 14px;
+    color: #cdd6f4;
+}
+
+/* ========== SCROLL AREA (Chat) ========== */
+QScrollArea#chat_scroll {
+    background-color: #181825;
+    border: none;
+    border-radius: 16px;
+}
+
+QScrollArea#chat_scroll QWidget#qt_scrollarea_viewport {
+    background-color: #181825;
+}
+
+QScrollBar:vertical {
+    background: #1e1e2e;
+    width: 8px;
+    margin: 2px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical {
+    background: #45475a;
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #89b4fa;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* ========== INPUT AREA ========== */
+QLineEdit#input_field {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 2px solid #45475a;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 14px;
+    min-height: 24px;
+}
+QLineEdit#input_field:focus {
+    border-color: #cba6f7;
+}
+
+/* ========== BUTTONS ========== */
+QPushButton#send_btn {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-weight: bold;
+    font-size: 14px;
+}
+QPushButton#send_btn:hover { background-color: #b4d0fb; }
+QPushButton#send_btn:pressed { background-color: #74a8f7; }
+QPushButton#send_btn:disabled {
+    background-color: #45475a;
+    color: #6c7086;
+}
+
+QPushButton#settings_btn, QPushButton#theme_btn {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 13px;
+}
+QPushButton#settings_btn:hover, QPushButton#theme_btn:hover {
+    background-color: #45475a;
+    border-color: #89b4fa;
+}
+
+/* ========== STATUS BAR ========== */
+QStatusBar {
+    background-color: #181825;
+    color: #a6adc8;
+    border-top: 1px solid #313244;
+    font-size: 12px;
+}
+
+/* ========== SETTINGS DIALOG ========== */
+QDialog {
+    background-color: #1e1e2e;
+}
+QComboBox, QSpinBox, QDoubleSpinBox {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+QComboBox:editable, QSpinBox:focus, QDoubleSpinBox:focus {
+    border-color: #cba6f7;
+}
+
+/* حباب‌های چت در فایل chat_widget.py استایل داده شده‌اند */
